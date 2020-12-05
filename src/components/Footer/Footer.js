@@ -11,27 +11,36 @@ const Footer = () => {
     <footer>
       <div className={footerStyles.main}>
       <div className={footerStyles.iconView}>
+
+      <a href="https://github.com/snazzyai">
       <FontAwesomeIcon
       className={footerStyles.icon}
       icon={faGithub}
       title='github icon'
       size="2x"
     />
-    <FontAwesomeIcon
-                className={footerStyles.icon}
-                icon={faLinkedin}
-                title='github icon'
-                size="2x"
-              />
-              <FontAwesomeIcon
-                className={footerStyles.icon}
-                icon={faTwitter}
-                title='github icon'
-                size="2x"
-              />
+      </a>
+      <a href="https://www.linkedin.com/in/abdulsalam-ibrahim-58701a77/">
+      <FontAwesomeIcon
+      className={footerStyles.icon}
+      icon={faLinkedin}
+      title='github icon'
+      size="2x"
+    />
+
+      </a>
+   <a href="https://twitter.com/snazzyAI">
+   <FontAwesomeIcon
+   className={footerStyles.icon}
+   icon={faTwitter}
+   title='github icon'
+   size="2x"
+ />
+   </a>
+              
       </div>
       <div className={footerStyles.copyView}>
-      <p>By Abdulsalam Ibrahim</p>
+      <p>Built by Abdulsalam Ibrahim</p>
         <p>Copyright 2020.</p>
       </div>
         
