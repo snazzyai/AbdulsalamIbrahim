@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <Layout>
       <div className="main">
-    
+        <h1>Oops.. Under Construction! </h1>
       </div>
     </Layout>
   )

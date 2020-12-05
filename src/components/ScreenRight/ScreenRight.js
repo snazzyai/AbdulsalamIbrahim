@@ -12,9 +12,8 @@ const ScreenRight = () => {
  
   return (
     <div>
-      <Skills skillData = {skillData} />
       <Experience experienceData = {experienceData}/>
-  
+      <Skills skillData = {skillData} />
     </div>
   )
 }

@@ -36,11 +36,11 @@ $image: url('')
     border-radius: 50%
     height: $imageSize
     width: $imageSize
-    animation: pulsate 2.5s ease-out
+    animation: pulsateBack 2.5s ease-out
     animation-iteration-count: infinite
     opacity: 0.0
     content: ""
-    z-index: -1
+    z-index: 1
 
 .imageAuthor
     @extend .circle
@@ -72,6 +72,16 @@ $image: url('')
         transform: scale(1.2, 1.2)
         opacity: 0.0
 
+@keyframes pulsateBack
+    0%
+        transform: scale(1.0, 1.0)
+        opacity: 0.0
+    80%
+        opacity: 0.2
+    100%
+        transform: scale(1.2, 1.2)
+        opacity: 0.0
+
 @media screen and ( max-width: 1255px )
     .main
         border-right: none
@@ -84,12 +94,12 @@ $image: url('')
     //     content: ""
     //     z-index: 1
 
-    // @keyframes pulsateBack
-    //     0%
-    //         transform: scale(1.0, 1.0)
-    //         opacity: 0.0
-    //     50%
-    //         opacity: 0.2
-    //     100%
-    //         transform: scale(1.2, 1.2)
-    //         opacity: 0.0
+    @keyframes pulsateBack
+        0%
+            transform: scale(1.0, 1.0)
+            opacity: 0.0
+        50%
+            opacity: 0.2
+        100%
+            transform: scale(1.2, 1.2)
+            opacity: 0.0

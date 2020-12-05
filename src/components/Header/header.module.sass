@@ -2,13 +2,33 @@
 
 $brandSize: 3.2rem
 
-header
+.top
     margin: 0 auto
     padding: 1rem
-
     display: flex
     justify-content: space-between
     align-items: center
+
+.bottom
+    display: flex
+    justify-content: flex-end
+    background: purple
+    color: #ffffff
+    animation: moveInTop 1.2s ease-out
+    .navItemBottom
+        // @extend .navItem
+        text-decoration: none
+        font-size: 1.7rem
+        padding: 1.5rem
+        color: #fff
+    ul
+        list-style-type: none
+
+    li
+        padding: 0.5rem
+        color: #fff
+        margin: .5rem
+        animation: moveInLeft 1.2s ease-out
 
 .brandName
     height: $brandSize
@@ -37,6 +57,7 @@ header
 
 .navBurger
     display: none
+
 .navItem
     text-decoration: none
     color: #888
@@ -48,9 +69,50 @@ header
     height: 30px
     margin-right: .5rem
     color: purple
+    animation: moveInLeft 0.5s ease-out
+
+@keyframes moveInRight
+    0%
+        opacity: 0
+        transform: translateX(100px)
+
+    80%
+        transform: translateX(-10px)
+
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+@keyframes moveInLeft
+    0%
+        opacity: 0
+        transform: translateX(-100)
+
+    80%
+        transform: translateX(10px)
+
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+@keyframes moveInTop
+    0%
+        opacity: 0
+        transform: translateY(50px)
+
+    70%
+        transform: translateY(-10px)
+
+    100%
+        opacity: 1
+        transform: translateX(0)
 
 @media screen and ( max-width: 1255px )
     .navNormal
         display: none
     .navBurger
         display: block
+
+@media screen and ( min-width: 1255px )
+    .bottom
+        display: none

@@ -1,13 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import headerStyles from "./header.module.sass"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
+
+
 
 const Header = () => {
+
+  const [navClick, setNavClick] = useState(false)
+
+  function menuClick(){
+    setNavClick(!navClick)
+  }
+  
   return (
+    <>
     <header>
-      <div className={headerStyles.brandName}>
+    <div className={headerStyles.top}>
+    <div className={headerStyles.brandName}>
         <div>
           <h2 className={headerStyles.brandInitials}>AI</h2>
         </div>
@@ -36,13 +47,63 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <nav className={headerStyles.navBurger}>
-      <FontAwesomeIcon
-      className={headerStyles.menu}
-      icon={faBars}
-    />
-      </nav>
+      
+      <nav className={headerStyles.navBurger} onClick={menuClick} >
+      {
+        !navClick ? <FontAwesomeIcon
+        className={headerStyles.menu}
+        icon={faBars}
+        size="3x"
+      />
+      :<div></div>
+
+      }
+        
+        {
+          navClick ? <FontAwesomeIcon
+          className={headerStyles.menu}
+          icon={faTimes}
+          size="3x"
+        />
+        : <div></div>
+        }
+        
+        </nav>
+    </div>
+    <div className={headerStyles.bottom}>
+    {
+       
+      navClick ? 
+            <div className={headerStyles.bottomView}>
+            <ul>
+            <li>
+              <Link className={headerStyles.navItemBottom} to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className={headerStyles.navItemBottom} to="/about">
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link className={headerStyles.navItemBottom} to="/projects">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link className={headerStyles.navItemBottom} to="/contact">
+                Contact Me
+              </Link>
+            </li>
+          </ul>
+            </div> : <div></div>
+    
+          }
+    </div>
+    
     </header>
+    </>
   )
 }
 
