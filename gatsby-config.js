@@ -6,5 +6,16 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-sass", 
+    "gatsby-plugin-fontawesome-css",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     path: `${__dirname}/static/images`,
+    //   },
+    // },
+  ],
 }

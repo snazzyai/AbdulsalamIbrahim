@@ -1,0 +1,95 @@
+$imageSize: 150px
+$space: 1.5rem
+$image: url('')
+
+.circle
+    width: $imageSize
+    height: $imageSize
+    border-radius: 50%
+
+.main
+    margin: 2rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-right: 1px solid #000
+    padding: 2rem
+
+.title
+    font-weight: lighter
+    font-size: $space
+
+.name
+    margin-top: $space
+    text-align: center
+    h1
+        font-size: 2.2rem
+
+.image
+    display: flex
+    align-items: center
+    justify-content: center
+
+.imageGlow
+    display: flex
+    background: black
+    border-radius: 50%
+    height: $imageSize
+    width: $imageSize
+    animation: pulsate 2.5s ease-out
+    animation-iteration-count: infinite
+    opacity: 0.0
+    content: ""
+    z-index: -1
+
+.imageAuthor
+    @extend .circle
+    display: flex
+    background: url('../../../static/images/abdul.png')
+    background-size: cover
+    background-position: center center
+    margin-top: 1.5rem
+
+.location
+    margin-top: $space
+
+.locationIcon
+    width: 1rem
+    height: 1rem
+    margin-right: .5rem
+    color: #ff8111
+
+.locationFont
+    font-size: 1rem
+
+@keyframes pulsate
+    0%
+        transform: scale(0.1, 0.1)
+        opacity: 0.0
+    50%
+        opacity: 1.0
+    100%
+        transform: scale(1.2, 1.2)
+        opacity: 0.0
+
+@media screen and ( max-width: 1255px )
+    .main
+        border-right: none
+        margin: 0
+
+    // .imageGlow
+    //     animation: pulsateBack 2.5s ease-out
+    //     animation-iteration-count: infinite
+    //     opacity: 0.0
+    //     content: ""
+    //     z-index: 1
+
+    // @keyframes pulsateBack
+    //     0%
+    //         transform: scale(1.0, 1.0)
+    //         opacity: 0.0
+    //     50%
+    //         opacity: 0.2
+    //     100%
+    //         transform: scale(1.2, 1.2)
+    //         opacity: 0.0
