@@ -6,6 +6,7 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = () => {
+  const year = new Date().getFullYear()
   return (
     <footer>
       <div className={footerStyles.main}>
@@ -37,7 +38,7 @@ const Footer = () => {
         </div>
         <div className={footerStyles.copyView}>
           <p>Built by Abdulsalam Ibrahim</p>
-          <p>Copyright &copy; 2020.</p>
+          <p>Copyright &copy; {year}</p>
         </div>
       </div>
     </footer>
