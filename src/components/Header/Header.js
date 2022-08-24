@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import headerStyles from "./header.module.sass"
+import * as headerStyles from "./header.module.sass"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 
@@ -20,7 +20,7 @@ const Header = () => {
     <div className={headerStyles.top}>
     <div className={headerStyles.brandName}>
         <div>
-          <h2 className={headerStyles.brandInitials}>AI</h2>
+          <Link to="/"><h2 className={headerStyles.brandInitials}>AI</h2></Link>
         </div>
       </div>
       <nav className={headerStyles.navNormal}>
@@ -40,11 +40,11 @@ const Header = () => {
               Projects
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link className={headerStyles.navItem} to="/contact">
               Contact Me
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       

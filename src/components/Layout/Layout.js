@@ -1,7 +1,7 @@
 import React from "react"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
-import layoutStyles from "./layout.module.sass"
+import * as layoutStyles from "./layout.module.sass"
 
 const Layout = props => {
   return (

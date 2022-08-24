@@ -1,5 +1,5 @@
 import React from "react"
-import footerStyles from "./footer.module.sass"
+import * as footerStyles from "./footer.module.sass"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"

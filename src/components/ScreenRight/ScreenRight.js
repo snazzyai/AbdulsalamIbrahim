@@ -8,12 +8,11 @@ import Experience from '../Experience/Experience'
 
 
 
-const ScreenRight = () => {
+const ScreenRight = (props) => {
  
   return (
     <div>
-      <Experience experienceData = {experienceData}/>
-      <Skills skillData = {skillData} />
+      {props.children}
     </div>
   )
 }

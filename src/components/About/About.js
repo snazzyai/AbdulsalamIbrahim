@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
-import aboutStyles from "./about.module.sass"
+import * as aboutStyles from "./about.module.sass"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faCalendarAlt,
-  faMapMarkerAlt,
+  faDownload
 } from "@fortawesome/free-solid-svg-icons"
+import { motion } from 'framer-motion'
 
 const AboutMe = () => {
   return (
@@ -12,27 +12,33 @@ const AboutMe = () => {
       <div className={aboutStyles.main}>
         <h1 className={aboutStyles.heading}>About Me</h1>
         <div className={aboutStyles.aboutView}>
-          <div className={aboutStyles.aboutImage}></div>
           <div className={aboutStyles.aboutText}>
-            <h2>About Abdulsalam Ibrahim</h2>
             <p>
-              Abdulsalam Ibrahim is currently a masters student of Software
-              Engineering for Industrial Applications from Nigeria with over 1
-              year of experience in Web Development and Cross Platform Mobile
-              Application Development using state of the art technologies to
-              build solutions across different fields. Abdulsalam is a
+              Abdulsalam Ibrahim is a software engineeer with more than 3
+              years of experience in Software Development and Cross Platform Mobile
+              Application Development. Abdulsalam is a
               technology enthusiast with flare for developing usable solutions
-              with focus on code readability and performance. He is an advocate
-              of open source contribution and a great team player.
+              with focus on code readability and performance. He is business-focused, communicative
+              and a team player with good leadership skills.
+              He is also an advocate
+              of open source contribution with a passion to keep learning and using new technologies technologies
+              profer solutions effectively.
             </p>
             <p>
-              Abdulsalam is currently seeking a mandatory internship for the
-              completion of his masters and would be willing to open positions
-              in the field of Software Development(Web Development and Hybrid
-              Mobile Application Development)
+             
             </p>
             <div className={aboutStyles.buttonView}>
-              <button className={aboutStyles.buttonTwo}>
+              <motion.button 
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.8 },
+                }}
+                whileTap={{ scale: 0.8 }}
+                className={aboutStyles.buttonTwo}>
+              <FontAwesomeIcon
+                className={aboutStyles.downloadIcon}
+                icon={faDownload}
+              />
                 <a
                   href={`ResumeDev.pdf`}
                   className={aboutStyles.buttonTwoLink}
@@ -40,7 +46,7 @@ const AboutMe = () => {
                 >
                   Download My CV
                 </a>
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>

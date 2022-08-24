@@ -1,14 +1,16 @@
 import React, {useState, useEffect} from "react"
-import skillStyles from './skills.module.sass'
+import * as skillStyles from './skills.module.sass'
+import { motion } from 'framer-motion'
 
 
 
 const Skills = ({skillData}) => {
 
-    const [skills, setSkills] = useState([])
-    useEffect(()=>{
-        setSkills(skillData)
-      }, [])
+    // const [skills, setSkills] = useState([])
+
+    // useEffect(()=>{
+    //     setSkills(skillData)
+    //   }, [])
 
       return (
         <div className={skillStyles.main}>
@@ -16,11 +18,19 @@ const Skills = ({skillData}) => {
         <div className={skillStyles.container}>
         {
         
-          skills && skills.map((skill)=>{
+          skillData && skillData.map((skill)=>{
             return(
-              <div className={skillStyles.skill}>
+              <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  type: "spring",
+                  damping: 10,
+                  mass: 0.75,
+                  stiffness: 100,}}
+                  className={skillStyles.skill}>
                 {skill}
-              </div>
+              </motion.div>
             )
           })
         }

@@ -1,18 +1,27 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
 import "../styles/index.sass"
 import AboutMe from "../components/About/About"
+import ScreenLeft from "../components/ScreenLeft/ScreenLeft"
+import { motion } from "framer-motion"
 
 
 
 
 const About = () => {
   return (
-    <Layout>
-      <div className="main">
-        <AboutMe />
-      </div>
-    </Layout>
+    <motion.div
+    initial={{scaleX: 0}}
+    animate={{scaleX: 1}}
+    exit={{scaleX: 0}}
+    className="main">
+        <aside>
+          <ScreenLeft />
+        </aside>
+        <main>
+          <AboutMe />
+        </main>
+      
+    </motion.div>
   )
 }
 
