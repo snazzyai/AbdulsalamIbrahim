@@ -9,8 +9,8 @@ const Footer = () => {
   const year = new Date().getFullYear()
   return (
     <footer>
-      <div className={footerStyles.main}>
-        <div className={footerStyles.iconView}>
+      <div>
+        <div>
           <a href="https://github.com/snazzyai">
             <FontAwesomeIcon
               className={footerStyles.icon}
