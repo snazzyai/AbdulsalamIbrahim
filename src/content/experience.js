@@ -7,7 +7,7 @@ const experienceData = [
         duties: [
             "Use Vuejs, Vuex and Nuxtjs to create templates and add new features based on specifications",
         ],
-        skills: ["Javascript", "AngularJS", "Thingsboard", "AWS"]
+        skills: ["Javascript", "VueJS", "VueX", "Nuxtjs", "Git"]
     },
     {
         position: "Frontend Developer",
@@ -26,8 +26,8 @@ const experienceData = [
         date: "April 2021 - April 2022",
         location: "Koln, Germany",
         duties: [
-            "Maintained and Developed new features for existing website",
-            "Student training on Robotics programming using WeDo Robotics Sets",
+            "Maintained and Developed new features for existing website using Vuejs and Typescript",
+            "Wrote tests using cypress and Bitbutcket for version control",
         ],
         skills: ["NuxtJS/VueJS", "Typescript", "Cypress", "Git"]
     },
