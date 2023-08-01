@@ -5,9 +5,9 @@ const experienceData = [
         date: "April 2022 - Present",
         location: "Hamburg, Germany",
         duties: [
-            "Use Vuejs, Vuex and Nuxtjs to create templates and add new features based on specifications",
+            "Use Vuejs, Vuex, Nodejs and Nuxtjs to create templates and add new features based on specifications",
         ],
-        skills: ["Javascript", "VueJS", "VueX", "Nuxtjs", "Git"]
+        skills: ["Javascript", "VueJS", "VueX", "Nuxtjs","Nodejs", "Git"]
     },
     {
         position: "Frontend Developer",
