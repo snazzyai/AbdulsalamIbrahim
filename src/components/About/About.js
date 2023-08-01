@@ -39,12 +39,12 @@ const AboutMe = () => {
                 className={aboutStyles.downloadIcon}
                 icon={faDownload}
               />
-                <a
-                  href={`ResumeDev.pdf`}
+                 <a
+                  href="https://drive.google.com/file/d/16Wh123T4LkBMBiw8dPycQaR3YF6RSQSw/view?usp=drive_link"
                   className={aboutStyles.buttonTwoLink}
                   download
                 >
-                  Download My CV
+                  Check CV
                 </a>
               </motion.button>
             </div>

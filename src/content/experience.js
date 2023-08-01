@@ -1,12 +1,22 @@
 const experienceData = [
     {
         position: "Frontend Developer",
+        workplace: "Verlingo GmbH",
+        date: "April 2022 - Present",
+        location: "Hamburg, Germany",
+        duties: [
+            "Use Vuejs, Vuex and Nuxtjs to create templates and add new features based on specifications",
+        ],
+        skills: ["Javascript", "AngularJS", "Thingsboard", "AWS"]
+    },
+    {
+        position: "Frontend Developer",
         workplace: "Nuventura GmbH",
         date: "April 2022 - Present",
         location: "Berlin, Germany",
         duties: [
-            "Worked on Wordpress websites",
-            "Student training on Robotics programming using WeDo Robotics Sets",
+            "Worked on creating Dashboard for Thingsboard",
+            "Managed EC2 Instances and changed policies when necessary"
         ],
         skills: ["Javascript", "AngularJS", "Thingsboard", "AWS"]
     },
