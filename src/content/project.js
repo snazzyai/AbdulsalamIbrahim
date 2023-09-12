@@ -13,6 +13,13 @@ const projectData = [
         github: 'https://github.com/snazzyai/angularWeather',
         imageUrl: 'https://www.4shared.com/img/1HINaxGXiq/s25/182ce978dd8/weather2'
     },
+    {
+        name: 'E-trade',
+        info: 'A sophisticated trading website for listing used and new products',
+        techstack: 'NextJS, NuxtJS, Typescript, Cypress, Vite',
+        github: 'https://github.com/snazzyai/e-trade',
+        imageUrl: ''
+    },
 
 ]
 
