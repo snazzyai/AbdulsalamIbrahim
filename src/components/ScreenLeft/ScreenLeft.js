@@ -11,7 +11,7 @@ const ScreenLeft = () => {
         <div>
           {/* {" "} */}
           <span className={screenLeftStyles.title}>
-            Frontend Developer
+            Software Developer
           </span>
         </div>
 
@@ -39,7 +39,7 @@ const ScreenLeft = () => {
           className={screenLeftStyles.locationIcon}
           icon={faMapMarkerAlt}
         />
-        <span className={screenLeftStyles.locationFont}>Hof, Germany</span>
+        <span className={screenLeftStyles.locationFont}>Bochum, Germany</span>
       </div>
     </div>
   )

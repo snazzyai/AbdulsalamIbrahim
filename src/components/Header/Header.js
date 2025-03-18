@@ -39,11 +39,11 @@ const Header = () => {
                   Projects
                 </Link>
               </li>
-              {/* <li>
-            <Link className={headerStyles.navItem} to="/contact">
-              Contact Me
-            </Link>
-          </li> */}
+              <li>
+                <Link className={headerStyles.navItem} to="/contact">
+                  Contact Me
+                </Link>
+              </li>
             </ul>
           </nav>
 

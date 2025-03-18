@@ -36,7 +36,7 @@ const AboutMe = () => {
                   icon={faDownload}
                 />
                 <a
-                  href={`ResumeDev.pdf`}
+                  href="https://drive.google.com/file/d/16s0Pa77VMxMUp6BsgwoJc8cPi2-CuBfF/view?usp=drive_link"
                   className={aboutStyles.buttonTwoLink}
                   download
                 >

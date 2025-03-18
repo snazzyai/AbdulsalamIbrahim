@@ -1,10 +1,11 @@
 import React from "react"
 import "../styles/index.sass"
+import ContactForm from "../components/ContactForm/ContactForm"
 
 const Contact = () => {
   return (
     <div className="main">
-      <h1>Oops.. Under Construction! </h1>
+      <ContactForm />
     </div>
   )
 }
