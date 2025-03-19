@@ -1,10 +1,5 @@
-import React, { useState, useRef } from "react"
+import React, { useRef } from "react"
 import * as contactForm from "./contactForm.module.sass"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faCalendarAlt,
-  faMapMarkerAlt,
-} from "@fortawesome/free-solid-svg-icons"
 import { motion } from "framer-motion"
 
 const ContactForm = () => {
@@ -32,17 +27,10 @@ const ContactForm = () => {
             />
           </div>
           <div class={contactForm.name}>
-            <input
-              aria-description="name field"
-              type="text"
-              name="user_name"
-              id="name"
-              placeholder="Name"
-            />
+            <input type="text" name="user_name" id="name" placeholder="Name" />
           </div>
           <div class={contactForm.email}>
             <input
-              aria-description="email field"
               type="text"
               name="user_email"
               id="email"
@@ -51,7 +39,6 @@ const ContactForm = () => {
           </div>
           <div class={contactForm.textareaView}>
             <textarea
-              aria-description="message field"
               name="message"
               id="message"
               placeholder="Message..."

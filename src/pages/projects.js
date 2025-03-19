@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
 import "../styles/index.sass"
 import Project from '../components/Project/Project'
 import projectData from '../content/project'
