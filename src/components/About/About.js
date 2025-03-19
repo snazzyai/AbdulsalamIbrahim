@@ -12,7 +12,7 @@ const AboutMe = () => {
         <div className={aboutStyles.aboutView}>
           <div className={aboutStyles.aboutText}>
             <p>
-              Abdulsalam Ibrahim is a software engineeer with more than 3 years
+              Abdulsalam Ibrahim is a software engineeer with more than 4 years
               of experience in Software Development and Cross Platform Mobile
               Application Development. Abdulsalam is a technology enthusiast
               with flare for developing usable solutions with focus on code
